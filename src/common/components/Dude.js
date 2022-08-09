@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import getRandomOnArray from '../utils/getRandomOnArray';
 import themeColors from '../constants/themesColors';
 import facesClassesList from '../constants/facesClassList';
-
+ 
 
 export default function Dude (props){
     let dudeFace = getRandomOnArray(facesClassesList);
