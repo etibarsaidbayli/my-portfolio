@@ -8,19 +8,21 @@ import Dude from "../../../common/components/Dude";
 
 const TabItem = styled.li`
   width: auto;
-  
+
   padding: 0.5rem 0.8rem;
 
   font-size: 14px;
-  
+
   cursor: pointer;
 
   color: ${(props) => (props.isCurrentTab ? props.themeColor : "white")};
-  border-top: 2px solid ${(props) => (props.isCurrentTab ? props.themeColor : "#444")};
+  border-top: 2px solid
+    ${(props) => (props.isCurrentTab ? props.themeColor : "#444")};
 
   @media (min-width: 768px) {
     border-top: none;
-    border-left: 2px solid ${(props) => (props.isCurrentTab ? props.themeColor : "#444")};
+    border-left: 2px solid
+      ${(props) => (props.isCurrentTab ? props.themeColor : "#444")};
   }
 `;
 
@@ -28,8 +30,8 @@ const ListDescriptions = styled.ul`
   padding: 0;
 
   > * {
-    margin-bottom: .8rem;
-    font-size: .9rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
     position: relative;
     padding-left: 18px;
 
@@ -44,7 +46,6 @@ const ListDescriptions = styled.ul`
 `;
 
 const CompanyTheme = styled.div`
-
   > * {
     text-decoration: none;
     color: ${(props) => props.themeColor ?? "white"};
@@ -56,16 +57,16 @@ const CompanyTheme = styled.div`
 `;
 
 const CurrentTab = styled.div`
- .tab-title {
-   font-size: 1.1rem;
-   margin-bottom: .5rem;
- }
+  .tab-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
 
- .tab-phase {
+  .tab-phase {
     margin-bottom: 1rem;
 
     font-size: 0.8rem;
- }
+  }
 `;
 
 function ExperienceSection() {
@@ -74,7 +75,6 @@ function ExperienceSection() {
       id: 0,
       company: {
         name: "Freelance",
-    
       },
       title: "Front-End-Developer",
       phase: "Feb 2021 - Still",
@@ -83,16 +83,31 @@ function ExperienceSection() {
         "Focus on performance and perfect detailed pages",
       ],
     },
-    
+    {
+      id: 1,
+      company: {
+        name: "RAM Holding",
+      },
+      title: "Front-End-Developer",
+      phase: "Aug 2022 - Still",
+      descriptions: [
+        "Creating landing pages and web applications with   javascript, React JS, Vue Js for a diverse array of clients",
+      ],
+    },
   ];
 
   let [themeColor, setThemeColor] = useState([themesColors[2]]);
-  let [currentTab, setCurrentTab] = useState(experiences[0]);
+  let [currentTab, setCurrentTab] = useState(experiences[1]);
 
   return (
     <section className="row py-5">
       <div className="col-12 ">
-        <TitleSection themeColor={themeColor} onClick={() => setThemeColor(getRandomOnArray(themesColors))}>experience</TitleSection>
+        <TitleSection
+          themeColor={themeColor}
+          onClick={() => setThemeColor(getRandomOnArray(themesColors))}
+        >
+          experience
+        </TitleSection>
       </div>
       <div className="col-md-8">
         <div className="row py-3 my-md-5">
@@ -111,23 +126,22 @@ function ExperienceSection() {
           <div className="col-md-9">
             <CurrentTab className="">
               <div className="tab-title d-flex">
-                <div className="job-title">
-                  {currentTab.title}
-                </div>
+                <div className="job-title">{currentTab.title}</div>
                 &nbsp;
                 <CompanyTheme
                   themeColor={themeColor}
                   className="d-flex align-items-center"
                 >
-                  
-                  <a href={currentTab.company.url} target="_blank" rel="noreferrer">
+                  <a
+                    href={currentTab.company.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {/* {currentTab.company.name} */}
                   </a>
                 </CompanyTheme>
               </div>
-              <div className="tab-phase">
-                {currentTab.phase}
-              </div>
+              <div className="tab-phase">{currentTab.phase}</div>
               <ListDescriptions themeColor={themeColor}>
                 {currentTab?.descriptions?.map((description, i) => (
                   <li key={i}>{description}</li>
@@ -138,7 +152,11 @@ function ExperienceSection() {
         </div>
       </div>
       <div className="offset-md-1 col-md-3 d-flex justify-content-center align-items-center">
-        <Dude className="anxious-boy" themeColor={themeColor} setThemeColor={setThemeColor} />
+        <Dude
+          className="anxious-boy"
+          themeColor={themeColor}
+          setThemeColor={setThemeColor}
+        />
       </div>
     </section>
   );
