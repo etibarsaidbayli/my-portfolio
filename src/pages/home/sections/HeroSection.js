@@ -36,8 +36,7 @@ function HeroSection() {
               </AnchorTheme>
               <AnchorTheme
                 themeColor={themeColor}
-                href="https://drive.google.com/file/d/1AWmo67cXf7UvuoflRbsuOt2PvmeW-2Sn/view"
-                rel="noreferrer"
+                href="https://drive.google.com/file/d/1EVrD5L7yvAsTMJHQaoCryPP3GwxJmgRi/view"
                 download
                 className="btn px-5 py-3"
               >
