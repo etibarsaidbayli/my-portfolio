@@ -48,6 +48,7 @@ function ProjectsSection() {
                         {list.map(project => (
                             <li className="col-md-4 p-3" key={project.id}>
                                 <Project
+                                 key={project.id}
                                     themeColor={themeColor}
                                     project={project}
                                 />
