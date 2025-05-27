@@ -50,7 +50,7 @@ function AboutSection() {
       <main className="col-md-8">
         <p>
           i am professional web developer with{" "}
-          <strong>3 + year experience in web development</strong>.I'm constantly
+          <strong>1 + year experience in web development</strong>.I'm constantly
           developing and learning new technologies in IT.
         </p>
         <p>
@@ -71,7 +71,7 @@ function AboutSection() {
           <li>Tailwind Css</li>
           <li>Redux</li>
           <li>Sass</li>
-          <li>Node JS</li>
+          <li>Vue JS</li>
         </TechList>
       </main>
     </SectionWrapper>

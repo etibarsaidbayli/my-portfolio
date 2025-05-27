@@ -72,31 +72,28 @@ const CurrentTab = styled.div`
 function ExperienceSection() {
   const experiences = [
     {
+      id: 0,
+      company: {
+        name: "Freelance",
+      },
+      title: "Front-End-Developer",
+      phase: "Feb 2021 - Still",
+      descriptions: [
+        "Creating landing pages with js, html, javascript for a diverse array of clients",
+        "Focus on performance and perfect detailed pages",
+      ],
+    },
+    {
       id: 1,
       company: {
         name: "RAM Holding",
       },
       title: "Front-End-Developer",
-      phase: "July 2022 - May 2024",
+      phase: "Aug 2022 - Still",
       descriptions: [
-        "Creating landing pages and web applications\n" +
-        "with React JS, Node JS for a diverse\n" +
-        "array of clients",
+        "Creating landing pages and web applications with   javascript, React JS, Vue Js for a diverse array of clients",
       ],
     },
-    {
-      id: 2,
-      company: {
-        name: "Bot Sculptors",
-      },
-      title: "Front-End-Developer",
-      phase: "June 2022 - May 2025",
-      descriptions: [
-        "Software development,client web interface\n" +
-        "development",
-      ],
-    },
-
   ];
 
   let [themeColor, setThemeColor] = useState([themesColors[2]]);
