@@ -86,7 +86,7 @@ section { padding: 96px 0; scroll-margin-top: 64px; }
 .diagram-lines line { stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 5 6; opacity: .45; animation: flow 3s linear infinite; vector-effect: non-scaling-stroke; }
 @keyframes flow { to { stroke-dashoffset: -22; } }
 .diagram-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 34%; aspect-ratio: 1; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; text-align: center; font-weight: 800; font-size: 17px; padding: 12px; box-shadow: 0 0 0 10px rgba(51, 85, 255, .1), 0 0 0 22px rgba(51, 85, 255, .05), var(--shadow); }
-.diagram-node { position: absolute; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 10px 13px; font-size: 13.5px; font-weight: 600; box-shadow: var(--shadow); white-space: nowrap; max-width: 220px; }
+.diagram-node { position: absolute; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 10px 13px; font-size: 13px; font-weight: 600; box-shadow: var(--shadow); white-space: nowrap; max-width: 220px; }
 .diagram-node svg { color: var(--accent); flex: none; }
 
 /* pains */
@@ -99,8 +99,8 @@ section { padding: 96px 0; scroll-margin-top: 64px; }
 .solution p { font-size: 18px; font-weight: 600; }
 
 /* services */
-.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 44px; }
-.service { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; transition: border-color .2s, transform .2s, box-shadow .2s; }
+.services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 44px; }
+.service { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 24px; transition: border-color .2s, transform .2s, box-shadow .2s; }
 .service:hover { border-color: rgba(51, 85, 255, .35); transform: translateY(-3px); box-shadow: var(--shadow); }
 .service-ico { width: 50px; height: 50px; border-radius: 14px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; margin-bottom: 20px; }
 .service p { color: var(--muted); margin-top: 10px; font-size: 15.5px; }

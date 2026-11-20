@@ -7,7 +7,7 @@ export const content = {
     nav: [['#xidmetler', 'Xidmətlər'], ['#isler', 'İşlər'], ['#proses', 'Necə işləyirəm'], ['#suallar', 'Suallar']],
     ctaShort: 'Konsultasiya',
     hero: {
-      eyebrow: '1C · Veb · Mobil · AI',
+      eyebrow: '1C · Veb · PWA · Mobil · AI',
       title: ['Biznesinizi', 'avtomatlaşdırıram', '— bir sistemdə'],
       lead: 'Müraciətlər, satış, anbar və hesabatlar Excel və WhatsApp yazışmalarında itmir. 1C, sayt, mobil tətbiq və AI-ni bir-birinə bağlayıram — siz yalnız nəticəni görürsünüz.',
       primary: 'Pulsuz konsultasiya',
@@ -15,7 +15,7 @@ export const content = {
       facts: [['5+ il', 'veb-development'], ['1C', 'biznes avtomatlaşdırması'], ['AI', 'zəng və müraciət botları']],
       me: 'Layihənizi özüm aparıram — əvvəldən sona',
     },
-    diagram: { center: 'Sizin biznes', nodes: ['Sayt və lendinq', '1C: anbar və mühasibat', 'Mobil tətbiq', 'AI-operator', 'CRM və hesabatlar', 'WhatsApp / Instagram'] },
+    diagram: { center: 'Sizin biznes', nodes: ['Sayt və lendinq', '1C: anbar və mühasibat', 'Mobil tətbiq və PWA', 'AI-operator', 'CRM və hesabatlar', 'WhatsApp / Instagram'] },
     pains: {
       eyebrow: 'Tanış gəlir?',
       title: 'Biznes böyüyür, amma proseslər hələ də əl ilədir',
@@ -35,8 +35,10 @@ export const content = {
       items: [
         { icon: 'db', t: '1C avtomatlaşdırma', d: '1C-nin tətbiqi və təkmilləşdirilməsi, anbar, satış və mühasibat uçotu, hesabatlar, sayt və kassa ilə mübadilə.' },
         { icon: 'web', t: 'Sayt və lendinqlər', d: 'Satış gətirən sayt: kalkulyator, onlayn sifariş, müraciət birbaşa WhatsApp-a və ya CRM-ə.' },
-        { icon: 'grid', t: 'Veb-sistemlər və CRM', d: 'Şəxsi kabinetlər, admin panellər, onlayn yazılış, daxili sistemlər — sizin prosesə uyğun.' },
+        { icon: 'app', t: 'Veb-tətbiqlər', d: 'Brauzerdə işləyən tam funksional tətbiqlər: şəxsi kabinet, onlayn yazılış, sifariş və ödəniş sistemləri.' },
+        { icon: 'pwa', t: 'PWA', d: 'Telefona ikonla quraşdırılan, oflayn işləyən və push-bildiriş göndərən tətbiq — App Store və Google Play-siz.' },
         { icon: 'phone', t: 'Mobil tətbiqlər', d: 'iOS və Android üçün tətbiqlər (React Native, Flutter): müştərilər və işçilər üçün.' },
+        { icon: 'grid', t: 'CRM və daxili sistemlər', d: 'Müştəri bazası, admin panellər, işçilər üçün sistemlər və hesabatlar — sizin prosesə uyğun.' },
         { icon: 'ai', t: 'AI-avtomatlaşdırma', d: 'Müraciətə 60 saniyədə zəng edən AI-operator, çat-botlar, sənəd və müraciətlərin avtomatik emalı.' },
         { icon: 'link', t: 'İnteqrasiyalar', d: 'WhatsApp, Instagram, ödəniş sistemləri, kassa, 1C və sayt arasında avtomatik məlumat mübadiləsi.' },
       ],
@@ -84,6 +86,7 @@ export const content = {
         ['Nə qədər vaxt aparır?', 'Lendinq — bir neçə gün. Veb-sistem, mobil tətbiq və ya 1C avtomatlaşdırması — layihədən asılı olaraq bir neçə həftə.'],
         ['Bizdə artıq 1C var. Onunla işləyirsiniz?', 'Bəli. Mövcud 1C-ni təkmilləşdirirəm və onu sayt, kassa, mobil tətbiq və CRM ilə bağlayıram.'],
         ['İşə salandan sonra dəstək olacaq?', 'Bəli. Sistemin işləməsinə, düzəlişlərə və inkişafına dəstək verirəm.'],
+        ['PWA nədir və mənə nə üçün lazımdır?', 'PWA — saytınızın telefona tətbiq kimi quraşdırılan versiyasıdır: ana ekranda ikon, oflayn iş və push-bildirişlər. Ayrıca iOS və Android tətbiqindən xeyli ucuz və tez hazırlanır, mağazalarda yoxlama gözləmək lazım deyil.'],
         ['Kiçik biznesəm, mənə uyğundur?', 'Bəli. Kiçik bizneslə çox vaxt sadə sayt və müraciətlərin avtomatlaşdırılmasından başlayırıq — tez nəticə verir.'],
       ],
     },
@@ -102,7 +105,7 @@ export const content = {
     nav: [['#xidmetler', 'Услуги'], ['#isler', 'Работы'], ['#proses', 'Как работаю'], ['#suallar', 'Вопросы']],
     ctaShort: 'Консультация',
     hero: {
-      eyebrow: '1С · Веб · Мобайл · AI',
+      eyebrow: '1С · Веб · PWA · Мобайл · AI',
       title: ['Автоматизирую', 'ваш бизнес', '— в одной системе'],
       lead: 'Заявки, продажи, склад и отчёты больше не теряются в Excel и переписках в WhatsApp. Связываю 1С, сайт, мобильное приложение и AI — вы видите только результат.',
       primary: 'Бесплатная консультация',
@@ -110,7 +113,7 @@ export const content = {
       facts: [['5+ лет', 'в веб-разработке'], ['1С', 'автоматизация бизнеса'], ['AI', 'боты для звонков и заявок']],
       me: 'Веду ваш проект лично — от начала до конца',
     },
-    diagram: { center: 'Ваш бизнес', nodes: ['Сайт и лендинг', '1С: склад и учёт', 'Мобильное приложение', 'AI-оператор', 'CRM и отчёты', 'WhatsApp / Instagram'] },
+    diagram: { center: 'Ваш бизнес', nodes: ['Сайт и лендинг', '1С: склад и учёт', 'Мобильное приложение и PWA', 'AI-оператор', 'CRM и отчёты', 'WhatsApp / Instagram'] },
     pains: {
       eyebrow: 'Знакомо?',
       title: 'Бизнес растёт, а процессы до сих пор ручные',
@@ -130,8 +133,10 @@ export const content = {
       items: [
         { icon: 'db', t: 'Автоматизация на 1С', d: 'Внедрение и доработка 1С: склад, продажи, бухгалтерия, отчёты, обмен с сайтом и кассой.' },
         { icon: 'web', t: 'Сайты и лендинги', d: 'Сайт, который продаёт: калькулятор, онлайн-заказ, заявки сразу в WhatsApp или CRM.' },
-        { icon: 'grid', t: 'Веб-системы и CRM', d: 'Личные кабинеты, админ-панели, онлайн-запись, внутренние системы — под ваш процесс.' },
+        { icon: 'app', t: 'Веб-приложения', d: 'Полноценные приложения в браузере: личные кабинеты, онлайн-запись, системы заказов и оплаты.' },
+        { icon: 'pwa', t: 'PWA', d: 'Приложение, которое ставится на телефон с иконкой, работает офлайн и шлёт push-уведомления — без App Store и Google Play.' },
         { icon: 'phone', t: 'Мобильные приложения', d: 'Приложения для iOS и Android (React Native, Flutter) — для клиентов и сотрудников.' },
+        { icon: 'grid', t: 'CRM и внутренние системы', d: 'Клиентская база, админ-панели, системы для сотрудников и отчёты — под ваш процесс.' },
         { icon: 'ai', t: 'AI-автоматизация', d: 'AI-оператор, который перезванивает по заявке за 60 секунд, чат-боты, автоматическая обработка заявок и документов.' },
         { icon: 'link', t: 'Интеграции', d: 'WhatsApp, Instagram, платёжные системы, кассы — автоматический обмен данными между 1С и сайтом.' },
       ],
@@ -179,6 +184,7 @@ export const content = {
         ['Сколько по времени?', 'Лендинг — несколько дней. Веб-система, мобильное приложение или автоматизация на 1С — несколько недель, в зависимости от проекта.'],
         ['У нас уже есть 1С. Работаете с ней?', 'Да. Дорабатываю существующую 1С и связываю её с сайтом, кассой, мобильным приложением и CRM.'],
         ['Будет поддержка после запуска?', 'Да. Сопровождаю систему, вношу правки и развиваю её дальше.'],
+        ['Что такое PWA и зачем оно мне?', 'PWA — это версия вашего сайта, которая ставится на телефон как приложение: иконка на главном экране, работа офлайн и push-уведомления. Выходит заметно дешевле и быстрее отдельных приложений для iOS и Android, и не нужно ждать проверки в сторах.'],
         ['У меня малый бизнес — мне подойдёт?', 'Да. С малым бизнесом часто начинаем с простого сайта и автоматизации заявок — это быстро даёт результат.'],
       ],
     },
@@ -194,4 +200,4 @@ export const content = {
   },
 };
 
-export const stack = ['1C:Enterprise', 'React', 'Next.js', 'Nuxt.js', 'Node.js', 'NestJS', 'React Native', 'Flutter', 'TypeScript', 'PostgreSQL', 'AI / LLM', 'WhatsApp API'];
+export const stack = ['1C:Enterprise', 'React', 'Next.js', 'Nuxt.js', 'Node.js', 'NestJS', 'React Native', 'Flutter', 'PWA', 'TypeScript', 'PostgreSQL', 'AI / LLM', 'WhatsApp API'];
