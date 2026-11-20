@@ -13,6 +13,7 @@ export const content = {
       primary: 'Pulsuz konsultasiya',
       secondary: 'İşlərimə baxın',
       facts: [['5+ il', 'veb-development'], ['1C', 'biznes avtomatlaşdırması'], ['AI', 'zəng və müraciət botları']],
+      me: 'Layihənizi özüm aparıram — əvvəldən sona',
     },
     diagram: { center: 'Sizin biznes', nodes: ['Sayt və lendinq', '1C: anbar və mühasibat', 'Mobil tətbiq', 'AI-operator', 'CRM və hesabatlar', 'WhatsApp / Instagram'] },
     pains: {
@@ -65,6 +66,8 @@ export const content = {
     why: {
       eyebrow: 'Niyə mən',
       title: '1C, veb, mobil və AI — bir mütəxəssisdə',
+      about: 'Salam, mən Etibaram. 5 ildən çoxdur veb-development ilə məşğulam, son illərdə isə 1C və AI ilə biznes proseslərini avtomatlaşdırıram. Mənim üçün əsas olan kod deyil, sizin biznesinizdə hiss olunan nəticədir.',
+      role: 'Full-stack developer · 1C · AI',
       items: [
         ['Bir əldən', '1C üçün bir, sayt üçün başqa, tətbiq üçün üçüncü podratçı axtarmağa ehtiyac yoxdur. Hamısı bir-biri ilə uyğun işləyir.'],
         ['Real təcrübə', '5+ il veb-development, iri holdinqdə və məhsul komandalarında iş, 1C ilə biznes avtomatlaşdırması.'],
@@ -105,6 +108,7 @@ export const content = {
       primary: 'Бесплатная консультация',
       secondary: 'Смотреть работы',
       facts: [['5+ лет', 'в веб-разработке'], ['1С', 'автоматизация бизнеса'], ['AI', 'боты для звонков и заявок']],
+      me: 'Веду ваш проект лично — от начала до конца',
     },
     diagram: { center: 'Ваш бизнес', nodes: ['Сайт и лендинг', '1С: склад и учёт', 'Мобильное приложение', 'AI-оператор', 'CRM и отчёты', 'WhatsApp / Instagram'] },
     pains: {
@@ -157,6 +161,8 @@ export const content = {
     why: {
       eyebrow: 'Почему я',
       title: '1С, веб, мобайл и AI — в одном специалисте',
+      about: 'Привет, я Этибар. Больше 5 лет занимаюсь веб-разработкой, а последние годы автоматизирую бизнес-процессы с помощью 1С и AI. Для меня главное не код, а результат, который чувствуется в вашем бизнесе.',
+      role: 'Full-stack разработчик · 1С · AI',
       items: [
         ['В одних руках', 'Не нужно искать одного подрядчика на 1С, другого на сайт и третьего на приложение. Всё работает согласованно.'],
         ['Реальный опыт', '5+ лет в веб-разработке, работа в крупном холдинге и продуктовых командах, автоматизация бизнеса на 1С.'],

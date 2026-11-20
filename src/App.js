@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { content, stack, WA_NUMBER, PHONE_LABEL } from './content';
+import photo from './assets/etibar.jpg';
+import face from './assets/etibar-face.jpg';
 
 const ICONS = {
   db: <><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5" /><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" /></>,
@@ -117,6 +119,10 @@ export default function App() {
                 <a className="btn btn-primary" href="#elaqe">{t.hero.primary}<Icon name="arrow" size={18} /></a>
                 <a className="btn btn-ghost" href="#isler">{t.hero.secondary}</a>
               </div>
+              <div className="me">
+                <img src={face} alt="Etibar Seyidbəyli" width="52" height="52" />
+                <div><b>Etibar Seyidbəyli</b><span>{t.hero.me}</span></div>
+              </div>
               <dl className="facts">
                 {t.hero.facts.map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v}</dd></div>)}
               </dl>
@@ -188,8 +194,17 @@ export default function App() {
           <div className="wrap">
             <div className="eyebrow">{t.why.eyebrow}</div>
             <h2>{t.why.title}</h2>
-            <div className="why">
-              {t.why.items.map(([h, d]) => <div key={h}><h3>{h}</h3><p>{d}</p></div>)}
+            <div className="why-layout">
+              <figure className="portrait">
+                <img src={photo} alt="Etibar Seyidbəyli" loading="lazy" />
+                <figcaption><b>Etibar Seyidbəyli</b><span>{t.why.role}</span></figcaption>
+              </figure>
+              <div>
+                <p className="about">{t.why.about}</p>
+                <div className="why">
+                  {t.why.items.map(([h, d]) => <div key={h}><h3>{h}</h3><p>{d}</p></div>)}
+                </div>
+              </div>
             </div>
             <div className="stack">
               <span className="stack-title">{t.why.stackTitle}</span>
