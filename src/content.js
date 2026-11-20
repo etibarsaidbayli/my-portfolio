@@ -1,0 +1,191 @@
+// All page copy in Azerbaijani and Russian.
+export const WA_NUMBER = '994506661009';
+export const PHONE_LABEL = '+994 50 666 10 09';
+
+export const content = {
+  az: {
+    nav: [['#xidmetler', 'Xidmətlər'], ['#isler', 'İşlər'], ['#proses', 'Necə işləyirəm'], ['#suallar', 'Suallar']],
+    ctaShort: 'Konsultasiya',
+    hero: {
+      eyebrow: '1C · Veb · Mobil · AI',
+      title: ['Biznesinizi', 'avtomatlaşdırıram', '— bir sistemdə'],
+      lead: 'Müraciətlər, satış, anbar və hesabatlar Excel və WhatsApp yazışmalarında itmir. 1C, sayt, mobil tətbiq və AI-ni bir-birinə bağlayıram — siz yalnız nəticəni görürsünüz.',
+      primary: 'Pulsuz konsultasiya',
+      secondary: 'İşlərimə baxın',
+      facts: [['5+ il', 'veb-development'], ['1C', 'biznes avtomatlaşdırması'], ['AI', 'zəng və müraciət botları']],
+    },
+    diagram: { center: 'Sizin biznes', nodes: ['Sayt və lendinq', '1C: anbar və mühasibat', 'Mobil tətbiq', 'AI-operator', 'CRM və hesabatlar', 'WhatsApp / Instagram'] },
+    pains: {
+      eyebrow: 'Tanış gəlir?',
+      title: 'Biznes böyüyür, amma proseslər hələ də əl ilədir',
+      items: [
+        'Müraciətlər Direct və WhatsApp-da itir, menecer gec cavab verir',
+        'Anbar qalığı Excel-dədir və heç vaxt dəqiq deyil',
+        'Hesabatı yığmaq üçün hər ay bir neçə gün vaxt gedir',
+        'Saytınız yoxdur və ya köhnədir — müştəri rəqibə gedir',
+        'Sayt, 1C və kassa bir-biri ilə "danışmır"',
+        'Hər məsələ üçün ayrı podratçı axtarmaq lazımdır',
+      ],
+      solution: 'Hamısını bir əldən həll edirəm: proseslərinizi öyrənirəm, lazım olanı avtomatlaşdırıram və sistemləri bir-birinə bağlayıram.',
+    },
+    services: {
+      eyebrow: 'Xidmətlər',
+      title: 'Nə edə bilərəm',
+      items: [
+        { icon: 'db', t: '1C avtomatlaşdırma', d: '1C-nin tətbiqi və təkmilləşdirilməsi, anbar, satış və mühasibat uçotu, hesabatlar, sayt və kassa ilə mübadilə.' },
+        { icon: 'web', t: 'Sayt və lendinqlər', d: 'Satış gətirən sayt: kalkulyator, onlayn sifariş, müraciət birbaşa WhatsApp-a və ya CRM-ə.' },
+        { icon: 'grid', t: 'Veb-sistemlər və CRM', d: 'Şəxsi kabinetlər, admin panellər, onlayn yazılış, daxili sistemlər — sizin prosesə uyğun.' },
+        { icon: 'phone', t: 'Mobil tətbiqlər', d: 'iOS və Android üçün tətbiqlər (React Native, Flutter): müştərilər və işçilər üçün.' },
+        { icon: 'ai', t: 'AI-avtomatlaşdırma', d: 'Müraciətə 60 saniyədə zəng edən AI-operator, çat-botlar, sənəd və müraciətlərin avtomatik emalı.' },
+        { icon: 'link', t: 'İnteqrasiyalar', d: 'WhatsApp, Instagram, ödəniş sistemləri, kassa, 1C və sayt arasında avtomatik məlumat mübadiləsi.' },
+      ],
+    },
+    cases: {
+      eyebrow: 'İşlər',
+      title: 'Etdiyim və iştirak etdiyim layihələr',
+      open: 'Bax',
+      items: [
+        { tag: 'Öz məhsulum · AI', t: 'FastCall', d: 'AI-operator reklamdan gələn müraciətə 60 saniyə ərzində zəng edir, AZ və RU dillərində danışır və müştərini kvalifikasiya edir.', stack: 'AI · Telefoniya · Node.js', url: 'https://fastcall.az' },
+        { tag: 'Öz məhsulum · hazırlanır', t: 'Restoranlar üçün POS', d: 'Restoran və kafelər üçün kassa sistemi: sifarişlər, mətbəx, anbar və hesabatlar bir yerdə.', stack: 'Veb · Mobil · Backend' },
+        { tag: 'Kiçik biznes üçün sayt', t: 'Təmizlik şirkəti üçün sayt', d: 'Qiymət kalkulyatoru, onlayn sifariş birbaşa WhatsApp-a, iki dil. Belə saytı bir neçə günə işə salıram.', stack: 'Lendinq · Kalkulyator · WhatsApp', url: 'https://etibarsaidbayli.github.io/demo/numune-temizlik/', demo: 'Demo' },
+        { tag: 'Komandada veb-development', t: 'Umico', d: 'Marketplace, loyallıq proqramı və maliyyə xidmətlərini birləşdirən platformanın veb-versiyası.', stack: 'Nuxt.js · HTML · CSS', url: 'https://umico.az' },
+        { tag: 'Komandada veb-development', t: 'Push30', d: 'Korporativ fitnes platforması: Azərbaycanda 250+ idman zalına giriş, onlayn yazılış və SİMA ilə biometrik giriş.', stack: 'HTML · CSS · JavaScript', url: 'https://push30.az' },
+      ],
+    },
+    process: {
+      eyebrow: 'Necə işləyirəm',
+      title: 'Aydın proses, gizli sürprizlər olmadan',
+      steps: [
+        ['Pulsuz audit', 'Biznesinizi və proseslərinizi öyrənirəm, vaxt və pulun harada itdiyini göstərirəm.'],
+        ['Plan və qiymət', 'Nə ediləcəyini, müddəti və qiyməti əvvəlcədən yazılı razılaşdırırıq.'],
+        ['Hazırlama', 'Hissə-hissə hazırlayıram və hər mərhələdə nəticəni göstərirəm.'],
+        ['İşə salma və dəstək', 'Sistemi işə salıram, komandanızı öyrədirəm və sonra da dəstək olaram.'],
+      ],
+    },
+    why: {
+      eyebrow: 'Niyə mən',
+      title: '1C, veb, mobil və AI — bir mütəxəssisdə',
+      items: [
+        ['Bir əldən', '1C üçün bir, sayt üçün başqa, tətbiq üçün üçüncü podratçı axtarmağa ehtiyac yoxdur. Hamısı bir-biri ilə uyğun işləyir.'],
+        ['Real təcrübə', '5+ il veb-development, iri holdinqdə və məhsul komandalarında iş, 1C ilə biznes avtomatlaşdırması.'],
+        ['Birbaşa əlaqə', 'Menecerlər və vasitəçilər yoxdur — işi görən adamla birbaşa danışırsınız.'],
+        ['Biznes dilində', 'Texniki terminlərlə deyil, rəqəmlərlə danışıram: nə qədər vaxt və pula qənaət edəcəksiniz.'],
+      ],
+      stackTitle: 'Texnologiyalar',
+    },
+    faq: {
+      eyebrow: 'Suallar',
+      title: 'Tez-tez verilən suallar',
+      items: [
+        ['Qiymət nə qədərdir?', 'Tapşırıqdan asılıdır. Pulsuz auditdən sonra dəqiq qiyməti yazılı şəkildə deyirəm və o, iş zamanı dəyişmir.'],
+        ['Nə qədər vaxt aparır?', 'Lendinq — bir neçə gün. Veb-sistem, mobil tətbiq və ya 1C avtomatlaşdırması — layihədən asılı olaraq bir neçə həftə.'],
+        ['Bizdə artıq 1C var. Onunla işləyirsiniz?', 'Bəli. Mövcud 1C-ni təkmilləşdirirəm və onu sayt, kassa, mobil tətbiq və CRM ilə bağlayıram.'],
+        ['İşə salandan sonra dəstək olacaq?', 'Bəli. Sistemin işləməsinə, düzəlişlərə və inkişafına dəstək verirəm.'],
+        ['Kiçik biznesəm, mənə uyğundur?', 'Bəli. Kiçik bizneslə çox vaxt sadə sayt və müraciətlərin avtomatlaşdırılmasından başlayırıq — tez nəticə verir.'],
+      ],
+    },
+    final: {
+      title: 'Biznesinizdə nəyi avtomatlaşdırmaq olar?',
+      lead: 'Bir neçə sözlə biznesinizi yazın — 30 dəqiqəlik pulsuz konsultasiyada nədən başlamağı və nə qədər vaxt və pula qənaət edəcəyinizi deyəcəm.',
+      name: 'Adınız', business: 'Biznesiniz', businessPh: 'Məs.: 3 filiallı kafe', task: 'Nəyi avtomatlaşdırmaq istəyirsiniz?', taskPh: 'Məs.: anbar uçotu və saytdan sifariş',
+      send: 'WhatsApp-a göndər', or: 'və ya birbaşa yazın:',
+      msg: (d) => `Salam, Etibar! Konsultasiya istəyirəm.\nAd: ${d.name}\nBiznes: ${d.business}\nTapşırıq: ${d.task}`,
+      need: 'Adınızı və biznesinizi yazın',
+    },
+    footer: 'Biznes avtomatlaşdırması: 1C, veb, mobil, AI · Bakı',
+  },
+
+  ru: {
+    nav: [['#xidmetler', 'Услуги'], ['#isler', 'Работы'], ['#proses', 'Как работаю'], ['#suallar', 'Вопросы']],
+    ctaShort: 'Консультация',
+    hero: {
+      eyebrow: '1С · Веб · Мобайл · AI',
+      title: ['Автоматизирую', 'ваш бизнес', '— в одной системе'],
+      lead: 'Заявки, продажи, склад и отчёты больше не теряются в Excel и переписках в WhatsApp. Связываю 1С, сайт, мобильное приложение и AI — вы видите только результат.',
+      primary: 'Бесплатная консультация',
+      secondary: 'Смотреть работы',
+      facts: [['5+ лет', 'в веб-разработке'], ['1С', 'автоматизация бизнеса'], ['AI', 'боты для звонков и заявок']],
+    },
+    diagram: { center: 'Ваш бизнес', nodes: ['Сайт и лендинг', '1С: склад и учёт', 'Мобильное приложение', 'AI-оператор', 'CRM и отчёты', 'WhatsApp / Instagram'] },
+    pains: {
+      eyebrow: 'Знакомо?',
+      title: 'Бизнес растёт, а процессы до сих пор ручные',
+      items: [
+        'Заявки теряются в Директе и WhatsApp, менеджер отвечает поздно',
+        'Остатки склада ведутся в Excel и никогда не сходятся',
+        'На сбор отчёта каждый месяц уходит несколько дней',
+        'Сайта нет или он устарел — клиент уходит к конкуренту',
+        'Сайт, 1С и касса не «разговаривают» друг с другом',
+        'Под каждую задачу нужно искать отдельного подрядчика',
+      ],
+      solution: 'Решаю всё в одних руках: изучаю ваши процессы, автоматизирую нужное и связываю системы между собой.',
+    },
+    services: {
+      eyebrow: 'Услуги',
+      title: 'Что я могу сделать',
+      items: [
+        { icon: 'db', t: 'Автоматизация на 1С', d: 'Внедрение и доработка 1С: склад, продажи, бухгалтерия, отчёты, обмен с сайтом и кассой.' },
+        { icon: 'web', t: 'Сайты и лендинги', d: 'Сайт, который продаёт: калькулятор, онлайн-заказ, заявки сразу в WhatsApp или CRM.' },
+        { icon: 'grid', t: 'Веб-системы и CRM', d: 'Личные кабинеты, админ-панели, онлайн-запись, внутренние системы — под ваш процесс.' },
+        { icon: 'phone', t: 'Мобильные приложения', d: 'Приложения для iOS и Android (React Native, Flutter) — для клиентов и сотрудников.' },
+        { icon: 'ai', t: 'AI-автоматизация', d: 'AI-оператор, который перезванивает по заявке за 60 секунд, чат-боты, автоматическая обработка заявок и документов.' },
+        { icon: 'link', t: 'Интеграции', d: 'WhatsApp, Instagram, платёжные системы, кассы — автоматический обмен данными между 1С и сайтом.' },
+      ],
+    },
+    cases: {
+      eyebrow: 'Работы',
+      title: 'Проекты, которые я сделал или в которых участвовал',
+      open: 'Открыть',
+      items: [
+        { tag: 'Свой продукт · AI', t: 'FastCall', d: 'AI-оператор звонит по заявке из рекламы в течение 60 секунд, говорит на азербайджанском и русском и квалифицирует клиента.', stack: 'AI · Телефония · Node.js', url: 'https://fastcall.az' },
+        { tag: 'Свой продукт · в разработке', t: 'POS для ресторанов', d: 'Кассовая система для ресторанов и кафе: заказы, кухня, склад и отчёты в одном месте.', stack: 'Веб · Мобайл · Бэкенд' },
+        { tag: 'Сайт для малого бизнеса', t: 'Сайт для клининговой компании', d: 'Калькулятор цены, онлайн-заказ прямо в WhatsApp, два языка. Такой сайт запускаю за несколько дней.', stack: 'Лендинг · Калькулятор · WhatsApp', url: 'https://etibarsaidbayli.github.io/demo/numune-temizlik/', demo: 'Демо' },
+        { tag: 'Веб-разработка в команде', t: 'Umico', d: 'Веб-версия платформы, объединяющей маркетплейс, программу лояльности и финансовые сервисы.', stack: 'Nuxt.js · HTML · CSS', url: 'https://umico.az' },
+        { tag: 'Веб-разработка в команде', t: 'Push30', d: 'Корпоративная фитнес-платформа: доступ в 250+ залов Азербайджана, онлайн-запись и биометрический вход через SIMA.', stack: 'HTML · CSS · JavaScript', url: 'https://push30.az' },
+      ],
+    },
+    process: {
+      eyebrow: 'Как я работаю',
+      title: 'Понятный процесс без скрытых сюрпризов',
+      steps: [
+        ['Бесплатный аудит', 'Разбираюсь в вашем бизнесе и процессах, показываю, где теряются время и деньги.'],
+        ['План и цена', 'Заранее письменно фиксируем, что делаем, сроки и стоимость.'],
+        ['Разработка', 'Делаю по частям и на каждом этапе показываю результат.'],
+        ['Запуск и поддержка', 'Запускаю систему, обучаю команду и остаюсь на поддержке.'],
+      ],
+    },
+    why: {
+      eyebrow: 'Почему я',
+      title: '1С, веб, мобайл и AI — в одном специалисте',
+      items: [
+        ['В одних руках', 'Не нужно искать одного подрядчика на 1С, другого на сайт и третьего на приложение. Всё работает согласованно.'],
+        ['Реальный опыт', '5+ лет в веб-разработке, работа в крупном холдинге и продуктовых командах, автоматизация бизнеса на 1С.'],
+        ['Напрямую', 'Без менеджеров и посредников — вы общаетесь с тем, кто делает работу.'],
+        ['На языке бизнеса', 'Говорю не терминами, а цифрами: сколько времени и денег вы сэкономите.'],
+      ],
+      stackTitle: 'Технологии',
+    },
+    faq: {
+      eyebrow: 'Вопросы',
+      title: 'Частые вопросы',
+      items: [
+        ['Сколько стоит?', 'Зависит от задачи. После бесплатного аудита называю точную цену письменно, и в процессе она не меняется.'],
+        ['Сколько по времени?', 'Лендинг — несколько дней. Веб-система, мобильное приложение или автоматизация на 1С — несколько недель, в зависимости от проекта.'],
+        ['У нас уже есть 1С. Работаете с ней?', 'Да. Дорабатываю существующую 1С и связываю её с сайтом, кассой, мобильным приложением и CRM.'],
+        ['Будет поддержка после запуска?', 'Да. Сопровождаю систему, вношу правки и развиваю её дальше.'],
+        ['У меня малый бизнес — мне подойдёт?', 'Да. С малым бизнесом часто начинаем с простого сайта и автоматизации заявок — это быстро даёт результат.'],
+      ],
+    },
+    final: {
+      title: 'Что можно автоматизировать в вашем бизнесе?',
+      lead: 'Опишите бизнес в двух словах — на бесплатной 30-минутной консультации скажу, с чего начать и сколько времени и денег это сэкономит.',
+      name: 'Ваше имя', business: 'Ваш бизнес', businessPh: 'Напр.: кафе с 3 филиалами', task: 'Что хотите автоматизировать?', taskPh: 'Напр.: учёт склада и заказы с сайта',
+      send: 'Отправить в WhatsApp', or: 'или напишите напрямую:',
+      msg: (d) => `Здравствуйте, Этибар! Хочу консультацию.\nИмя: ${d.name}\nБизнес: ${d.business}\nЗадача: ${d.task}`,
+      need: 'Укажите имя и бизнес',
+    },
+    footer: 'Автоматизация бизнеса: 1С, веб, мобайл, AI · Баку',
+  },
+};
+
+export const stack = ['1C:Enterprise', 'React', 'Next.js', 'Nuxt.js', 'Node.js', 'NestJS', 'React Native', 'Flutter', 'TypeScript', 'PostgreSQL', 'AI / LLM', 'WhatsApp API'];
