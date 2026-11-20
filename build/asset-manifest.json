@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.4a659c4d.css",
-    "main.js": "./static/js/main.a2797d6e.js",
+    "main.css": "./static/css/main.2bab9541.css",
+    "main.js": "./static/js/main.29eef41e.js",
     "static/media/etibar.jpg": "./static/media/etibar.9bf9e47147c554bba72b.jpg",
+    "static/media/demo-clean.jpg": "./static/media/demo-clean.59f0ce69241f8d929591.jpg",
     "index.html": "./index.html",
-    "main.4a659c4d.css.map": "./static/css/main.4a659c4d.css.map",
-    "main.a2797d6e.js.map": "./static/js/main.a2797d6e.js.map"
+    "main.2bab9541.css.map": "./static/css/main.2bab9541.css.map",
+    "main.29eef41e.js.map": "./static/js/main.29eef41e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a659c4d.css",
-    "static/js/main.a2797d6e.js"
+    "static/css/main.2bab9541.css",
+    "static/js/main.29eef41e.js"
   ]
 }

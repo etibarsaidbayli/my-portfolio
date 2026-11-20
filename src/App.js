@@ -2,28 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { content, stack, WA_NUMBER, PHONE_LABEL } from './content';
 import photo from './assets/etibar.jpg';
 import face from './assets/etibar-face.jpg';
-
-const ICONS = {
-  db: <><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5" /><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" /></>,
-  web: <><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M7 6.5h.01M10 6.5h.01" /></>,
-  grid: <><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><rect x="14" y="14" width="7" height="7" rx="1.5" /></>,
-  phone: <><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M11 18h2" /></>,
-  ai: <><path d="M12 3l1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z" /><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z" /></>,
-  link: <><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1" /><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" /></>,
-  app: <><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M9 9v11" /></>,
-  pwa: <><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M12 7v7M9 11l3 3 3-3" /></>,
-  arrow: <path d="M5 12h14M13 6l6 6-6 6" />,
-  x: <path d="M6 6l12 12M18 6L6 18" />,
-  check: <path d="M5 12l5 5 9-10" />,
-};
-const Icon = ({ name, size = 22 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{ICONS[name]}</svg>
-);
-const WaIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" /></svg>
-);
+import demoShot from './assets/demo-clean.jpg';
 
 const waLink = (text) => `https://wa.me/${WA_NUMBER}${text ? `?text=${encodeURIComponent(text)}` : ''}`;
+
+const WaIcon = ({ size = 20 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" /></svg>
+);
+const Check = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10" /></svg>
+);
+const PhoneMissed = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" /><path d="M16 3l5 5M21 3l-5 5" /></svg>
+);
 
 function readLang() {
   try {
@@ -33,24 +24,48 @@ function readLang() {
   }
 }
 
-function Diagram({ d }) {
-  // six nodes on an ellipse around the business, connected by animated lines
-  const pts = d.nodes.map((_, i) => {
-    const a = (Math.PI * 2 * i) / d.nodes.length - Math.PI / 2;
-    return [50 + 38 * Math.cos(a), 50 + 40 * Math.sin(a)];
-  });
+// Hero board: the same four slots show the "manual" mess or the "automatic" order.
+function Board({ b }) {
+  const [auto, setAuto] = useState(false);
+  const [touched, setTouched] = useState(false);
+
+  useEffect(() => {
+    // one orchestrated moment: tidy up once shortly after load, unless the visitor already toggled
+    if (touched) return undefined;
+    const id = setTimeout(() => setAuto(true), 1600);
+    return () => clearTimeout(id);
+  }, [touched]);
+
+  const pick = (v) => { setTouched(true); setAuto(v); };
+
   return (
-    <div className="diagram" aria-label={d.center}>
-      <svg className="diagram-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        {pts.map(([x, y], i) => <line key={i} x1="50" y1="50" x2={x} y2={y} />)}
-      </svg>
-      <div className="diagram-center"><span>{d.center}</span></div>
-      {d.nodes.map((n, i) => (
-        <div key={n} className="diagram-node" style={{ left: `${pts[i][0]}%`, top: `${pts[i][1]}%` }}>
-          <Icon name={['web', 'db', 'phone', 'ai', 'grid', 'link'][i]} size={18} />
-          <span>{n}</span>
+    <div className={`board ${auto ? 'is-auto' : 'is-manual'}`}>
+      <div className="board-head">
+        <span className="board-label">{b.label}</span>
+        <div className="switch" role="group" aria-label={b.label}>
+          <button type="button" aria-pressed={!auto} onClick={() => pick(false)}>{b.manual}</button>
+          <button type="button" aria-pressed={auto} onClick={() => pick(true)}>{b.auto}</button>
+          <span className="switch-thumb" aria-hidden="true" />
         </div>
-      ))}
+      </div>
+      <ol className="slots" aria-live="polite">
+        {b.chaos.map((c, i) => (
+          <li key={i} className={`slot slot-${i}`}>
+            <div className={`face chaos chaos-${c.kind}`} aria-hidden={auto}>
+              {c.kind === 'missed' && <PhoneMissed />}
+              {c.kind === 'chat' && <WaIcon size={16} />}
+              <div>
+                <b>{c.text}</b>
+                {c.meta && <small>{c.meta}</small>}
+              </div>
+            </div>
+            <div className="face order" aria-hidden={!auto}>
+              <span className="tick"><Check /></span>
+              <div><b>{b.order[i].text}</b><small>{b.order[i].meta}</small></div>
+            </div>
+          </li>
+        ))}
+      </ol>
     </div>
   );
 }
@@ -75,9 +90,9 @@ function ContactForm({ f }) {
         <label>{f.business}<input value={form.business} onChange={set('business')} placeholder={f.businessPh} /></label>
       </div>
       <label>{f.task}<textarea rows="3" value={form.task} onChange={set('task')} placeholder={f.taskPh} /></label>
-      {err && <div className="form-err">{err}</div>}
-      <button className="btn btn-primary" type="submit"><WaIcon />{f.send}</button>
-      <div className="form-alt">{f.or} <a href={waLink()} target="_blank" rel="noreferrer">{PHONE_LABEL}</a></div>
+      {err && <p className="form-err" role="alert">{err}</p>}
+      <button className="btn btn-wa" type="submit"><WaIcon />{f.send}</button>
+      <p className="form-alt">{f.or} <a href={waLink()} target="_blank" rel="noreferrer">{PHONE_LABEL}</a></p>
     </form>
   );
 }
@@ -99,129 +114,124 @@ export default function App() {
     <>
       <header className="top">
         <div className="wrap top-in">
-          <a href="#top" className="logo"><span className="logo-mark">ES</span><span className="logo-name">Etibar Seyidbəyli</span></a>
+          <a href="#top" className="logo">Etibar Seyidbəyli</a>
           <nav className="nav">{t.nav.map(([h, l]) => <a key={h} href={h}>{l}</a>)}</nav>
-          <div className="top-actions">
-            <div className="lang" role="group" aria-label="Language">
-              {['az', 'ru'].map((l) => <button key={l} className={l === lang ? 'on' : ''} onClick={() => setLang(l)}>{l.toUpperCase()}</button>)}
-            </div>
-            <a className="btn btn-dark btn-sm hide-sm" href="#elaqe">{t.ctaShort}</a>
+          <div className="lang" role="group" aria-label="Dil / Язык">
+            {['az', 'ru'].map((l) => <button key={l} type="button" aria-pressed={l === lang} onClick={() => setLang(l)}>{l.toUpperCase()}</button>)}
           </div>
+          <a className="btn btn-wa btn-sm hide-sm" href={waLink()} target="_blank" rel="noreferrer"><WaIcon size={18} />WhatsApp</a>
         </div>
       </header>
 
       <main id="top">
         <section className="hero">
           <div className="wrap hero-in">
-            <div>
-              <div className="eyebrow">{t.hero.eyebrow}</div>
-              <h1>{t.hero.title[0]} <em>{t.hero.title[1]}</em> {t.hero.title[2]}</h1>
+            <div className="hero-copy">
+              <h1>{t.hero.title}</h1>
               <p className="lead">{t.hero.lead}</p>
               <div className="cta">
-                <a className="btn btn-primary" href="#elaqe">{t.hero.primary}<Icon name="arrow" size={18} /></a>
-                <a className="btn btn-ghost" href="#isler">{t.hero.secondary}</a>
+                <a className="btn btn-wa" href={waLink()} target="_blank" rel="noreferrer"><WaIcon />{t.write}</a>
+                <a className="link" href="#xidmetler">{t.hero.how}</a>
               </div>
               <div className="me">
-                <img src={face} alt="Etibar Seyidbəyli" width="52" height="52" />
-                <div><b>Etibar Seyidbəyli</b><span>{t.hero.me}</span></div>
+                <img src={face} alt="" width="48" height="48" />
+                <p><b>Etibar Seyidbəyli</b><span>{t.hero.me}</span></p>
               </div>
-              <dl className="facts">
-                {t.hero.facts.map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v}</dd></div>)}
-              </dl>
             </div>
-            <Diagram d={t.diagram} />
+            <Board b={t.board} />
           </div>
         </section>
 
-        <section className="pains">
+        <section id="xidmetler" className="services">
           <div className="wrap">
-            <div className="eyebrow">{t.pains.eyebrow}</div>
-            <h2>{t.pains.title}</h2>
-            <ul className="pain-list">
-              {t.pains.items.map((p) => <li key={p}><span className="pain-x"><Icon name="x" size={14} /></span>{p}</li>)}
-            </ul>
-            <div className="solution"><Icon name="check" /><p>{t.pains.solution}</p></div>
-          </div>
-        </section>
-
-        <section id="xidmetler">
-          <div className="wrap">
-            <div className="eyebrow">{t.services.eyebrow}</div>
-            <h2>{t.services.title}</h2>
-            <div className="services">
-              {t.services.items.map((s) => (
-                <article key={s.t} className="service">
-                  <div className="service-ico"><Icon name={s.icon} /></div>
-                  <h3>{s.t}</h3>
-                  <p>{s.d}</p>
-                </article>
-              ))}
+            <div className="sec-head">
+              <h2>{t.services.title}</h2>
+              <p className="lead">{t.services.lead}</p>
             </div>
+            {t.services.groups.map((g) => (
+              <div key={g.t} className="group">
+                <h3 className="group-title">{g.t}</h3>
+                <ul className="rows">
+                  {g.items.map(([name, d, tech]) => (
+                    <li key={name}>
+                      <h4>{name}</h4>
+                      <p>{d}</p>
+                      <span className="tech">{tech}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </section>
 
-        <section id="isler" className="alt">
+        <section id="isler" className="cases">
           <div className="wrap">
-            <div className="eyebrow">{t.cases.eyebrow}</div>
             <h2>{t.cases.title}</h2>
-            <div className="cases">
-              {t.cases.items.map((c, i) => (
-                <article key={c.t} className={`case ${i < 2 ? 'case-big' : ''}`}>
-                  <div className="case-tag">{c.tag}</div>
-                  <h3>{c.t}</h3>
-                  <p>{c.d}</p>
-                  <div className="case-foot">
-                    <span className="case-stack">{c.stack}</span>
-                    {c.url && <a className="case-link" href={c.url} target="_blank" rel="noreferrer">{c.demo || t.cases.open}<Icon name="arrow" size={16} /></a>}
-                  </div>
-                </article>
-              ))}
+            <div className="case-grid">
+              <article className="case case-fc">
+                <span className="tag">{t.cases.fastcall.tag}</span>
+                <h3>{t.cases.fastcall.t}</h3>
+                <p>{t.cases.fastcall.d}</p>
+                <ol className="flow">{t.cases.fastcall.flow.map((s) => <li key={s}>{s}</li>)}</ol>
+                <a className="link link-light" href="https://fastcall.az" target="_blank" rel="noreferrer">{t.cases.fastcall.link}</a>
+              </article>
+              <article className="case case-demo">
+                <div>
+                  <span className="tag">{t.cases.demo.tag}</span>
+                  <h3>{t.cases.demo.t}</h3>
+                  <p>{t.cases.demo.d}</p>
+                  <a className="link" href="https://etibarsaidbayli.github.io/demo/numune-temizlik/" target="_blank" rel="noreferrer">{t.cases.demo.link}</a>
+                </div>
+                <a className="phone" href="https://etibarsaidbayli.github.io/demo/numune-temizlik/" target="_blank" rel="noreferrer" aria-label={t.cases.demo.link}>
+                  <img src={demoShot} alt={t.cases.demo.t} loading="lazy" />
+                </a>
+              </article>
+              <article className="case case-pos">
+                <span className="tag tag-soon">{t.cases.pos.tag}</span>
+                <h3>{t.cases.pos.t}</h3>
+                <p>{t.cases.pos.d}</p>
+              </article>
+              <div className="case-team">
+                <h3>{t.cases.team.t}</h3>
+                <ul>
+                  {t.cases.team.items.map(([n, d, u]) => (
+                    <li key={n}><a href={u} target="_blank" rel="noreferrer">{n}</a><span>{d}</span></li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="proses">
+        <section className="process">
           <div className="wrap">
-            <div className="eyebrow">{t.process.eyebrow}</div>
             <h2>{t.process.title}</h2>
             <ol className="steps">
-              {t.process.steps.map(([h, d], i) => (
-                <li key={h}><span className="step-n">{String(i + 1).padStart(2, '0')}</span><h3>{h}</h3><p>{d}</p></li>
-              ))}
+              {t.process.steps.map(([h, d]) => <li key={h}><h3>{h}</h3><p>{d}</p></li>)}
             </ol>
           </div>
         </section>
 
-        <section className="dark">
-          <div className="wrap">
-            <div className="eyebrow">{t.why.eyebrow}</div>
-            <h2>{t.why.title}</h2>
-            <div className="why-layout">
-              <figure className="portrait">
-                <img src={photo} alt="Etibar Seyidbəyli" loading="lazy" />
-                <figcaption><b>Etibar Seyidbəyli</b><span>{t.why.role}</span></figcaption>
-              </figure>
-              <div>
-                <p className="about">{t.why.about}</p>
-                <div className="why">
-                  {t.why.items.map(([h, d]) => <div key={h}><h3>{h}</h3><p>{d}</p></div>)}
-                </div>
-              </div>
-            </div>
-            <div className="stack">
-              <span className="stack-title">{t.why.stackTitle}</span>
-              {stack.map((s) => <span key={s} className="stack-chip">{s}</span>)}
+        <section id="haqqimda" className="about">
+          <div className="wrap about-in">
+            <figure className="portrait">
+              <img src={photo} alt="Etibar Seyidbəyli" loading="lazy" />
+              <figcaption>{t.about.caption}</figcaption>
+            </figure>
+            <div className="letter">
+              <h2>{t.about.title}</h2>
+              {t.about.p.map((p) => <p key={p}>{p}</p>)}
+              <ul className="facts">{t.about.facts.map((f) => <li key={f}>{f}</li>)}</ul>
+              <p className="stack"><span>{t.about.stack}:</span> {stack.join(', ')}</p>
             </div>
           </div>
         </section>
 
-        <section id="suallar">
-          <div className="wrap narrow">
-            <div className="eyebrow">{t.faq.eyebrow}</div>
+        <section id="suallar" className="faq">
+          <div className="wrap faq-in">
             <h2>{t.faq.title}</h2>
-            <div className="faq">
-              {t.faq.items.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}
-            </div>
+            <div>{t.faq.items.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div>
           </div>
         </section>
 
@@ -243,7 +253,7 @@ export default function App() {
         </div>
       </footer>
 
-      <a className="wa-float" href={waLink()} target="_blank" rel="noreferrer" aria-label="WhatsApp"><WaIcon /></a>
+      <a className="wa-float" href={waLink()} target="_blank" rel="noreferrer" aria-label={t.write}><WaIcon size={28} /></a>
     </>
   );
 }
